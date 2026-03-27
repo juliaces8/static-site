@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrument World Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Custom Hover Effect as requested */
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px); /* Lifts the card */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+        }
+        /* Image hover effect */
+        .product-card img {
+            transition: transform 0.5s ease;
+            height: 250px;
+            object-fit: contain;
+        }
+        .product-card:hover img {
+            transform: scale(1.1); /* Zooms the instrument slightly */
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <header class="bg-dark py-5 mb-5 text-center">
+        <h1 class="display-1 fw-bold" style="color: #baa44a !important;">Instrument World Store</h1>
+        <p class="lead text-white">Premium Instruments for Every Player</p>
+        <div class="container">
+            <hr class="text-secondary opacity-50">
+            <hr class="text-secondary opacity-50 w-75 mx-auto">
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 gy-5">
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://m.media-amazon.com/images/I/619MZsHqR4L._AC_SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top p-3 img-fluid" alt="Student Violin">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="fw-bold fs-2 mb-1">Violin</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$499.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://www.melhart.com/images/product/medium/ae00-4600.jpg" class="card-img-top p-3 img-fluid" alt="Flute">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="fw-bold fs-2 mb-1">Flute</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$699.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://kniskernmusichouse.com/wp-content/uploads/2020/09/viola.png" class="card-img-top p-3 img-fluid" alt="Viola">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="fw-bold fs-2 mb-1">Viola</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$299.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://media.guitarcenter.com/is/image/MMGS7/463674000390000-00-600x600.jpg" class="card-img-top p-3 img-fluid" alt="Clarinet">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="fw-bold fs-2 mb-1">Clarinet</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$339.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://m.media-amazon.com/images/I/81yiUKoFZZL._AC_SY300_SX300_QL70_FMwebp_.jpg" class="card-img-top p-3 img-fluid" alt="Cello">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="fw-bold fs-2 mb-1">Cello</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$599.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://m.media-amazon.com/images/I/71u4Thrj5UL._AC_SY450_.jpg" class="card-img-top p-3 img-fluid" alt="Saxophone">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="fw-bold fs-2 mb-1">Saxophone</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$259.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://m.media-amazon.com/images/I/91hU1iyp2NL._AC_SX679_.jpg" class="card-img-top p-3 img-fluid" alt="Classical Guitar">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="fw-bold fs-2 mb-1">Guitar</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$159.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://m.media-amazon.com/images/I/71R0estmcoL._AC_SX679_.jpg" class="card-img-top p-3 img-fluid" alt="Trumpet">
+                    <div class="card-body d-flex flex-column center">
+                        <h5 class="fw-bold fs-2 mb-1">Trumpet</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$149.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://m.media-amazon.com/images/I/81rsXj8s37L._AC_SX679_.jpg" class="card-img-top p-3 img-fluid" alt="Digital Piano">
+                    <div class="card-body d-flex flex-column center">
+                        <h5 class="fw-bold fs-2 mb-1">Digital Piano</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$1499.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-2 product-card">
+                    <img src="https://m.media-amazon.com/images/I/51i4zyIz2dL._AC_SX679_.jpg" class="card-img-top p-3 img-fluid" alt="Trombone">
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="fw-bold fs-2 mb-1">Trombone</h5>
+                        <p class="fw-bold fs-3 text-primary mb-4">$189.00</p>
+                        <button class="btn btn-dark btn-lg fs-4 py-3 mt-auto fw-bold">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-white border-top py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="https://t3.ftcdn.net/jpg/04/47/38/12/240_F_447381217_VFJeZLTSvfUDURWvECC4zmW4kIbAnquV.jpg" alt="Logo" class="rounded-circle w-75 shadow mb-3">
+                    <p class="fs-2 fw-bold">Instrument World Co.</p>
+                </div>
+                <div class="col-md-8">
+                    <h5 class="display-5 mb-4 fw-bold">Contact Us!</h5>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control form-control-lg border-2" placeholder="Full Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-lg border-2" placeholder="Email Address">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control border-2" rows="4" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-primary btn-lg px-5 fw-bold">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
